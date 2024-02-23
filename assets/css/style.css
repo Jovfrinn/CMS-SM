@@ -122,8 +122,10 @@
   .dropdown_menu{
     display: none;
     animation-duration: 0.2s;
-    margin-top: 10px;
- 
+    margin-top: 1px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 35rem;
   }
   .ul-nav li .dropdown_menu {
     animation-name: dropdown;
@@ -131,7 +133,7 @@
   }
   .ul-nav li:hover .dropdown_menu{
     display: block;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 100%;
     background-color: #394867;
@@ -191,6 +193,14 @@
   animation-name: dropdownRight;
     animation-timing-function: ease-in;
 }
+/* 
+.carousel-caption{
+width: 30%;
+display: inline-block;
+/* margin-bottom: 5rem; */
+/* transform: translateY(-12rem); */
+/* transform: translateX(10px); */
+/* } */ 
 
   @media(max-width: 800px){
     .hideOnMobile{
@@ -202,6 +212,10 @@
     .menu-button a svg{
       display: block;
         scale: 75%;
+    }
+    .sidebar{
+      width: 50%;
+      z-index: 10;
     }
     
   }
@@ -216,6 +230,9 @@
       display: block;
         scale: 75%;
     }
+    .sidebar{
+      z-index: 10;
+    }
     
   }
   @media(max-width: 400px){
@@ -223,7 +240,7 @@
       width: 100%;
       z-index: 10;
     }
-   +
+   
     /* nav li:first-child{
         margin-right: 54rem;
       } */
