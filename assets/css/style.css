@@ -192,17 +192,96 @@
   animation-duration: 0.2s;
   animation-name: dropdownRight;
     animation-timing-function: ease-in;
-}
-/* 
-.carousel-caption{
+}.carousel-caption{
 width: 30%;
 display: inline-block;
-/* margin-bottom: 5rem; */
-/* transform: translateY(-12rem); */
-/* transform: translateX(10px); */
-/* } */ 
+margin-bottom: 5rem; 
+transform: translateY(-12rem); 
+}
 
-  @media(max-width: 800px){
+.carousel-item{
+  /* display: absolute; */
+  z-index: -10;
+}
+
+/* page 2 */
+
+.visi-misi{
+  width: 20rem;
+  height: 10rem;
+  background-color: #394867;
+  border-radius: 0px 0px 0px 25px;
+}
+.kepala-sekolah{
+  width: 20rem;
+  height: 10rem;
+  background-color: #14274E;
+}
+.tentang-sekolah{
+  width: 20rem;
+  height: 10rem;
+  background-color: #9BA4B4;
+  border-radius: 0px 0px 25px 0px;
+}
+
+.visi-misi .fs-3{
+  /* margin: 30px 30px; */
+  font-family: 'Fredoka',sans-serif;
+  color: white;
+  /* font-size: 50px; */
+  z-index: 10;
+}
+.kepala-sekolah .fs-3{
+  /* margin: 30px 30px; */
+  font-family: 'Fredoka',sans-serif;
+  color: white;
+  /* font-size: 50px; */
+  z-index: 10;
+}
+.tentang-sekolah .fs-3{
+  /* margin: 30px 30px; */
+  font-family: 'Fredoka',sans-serif;
+  color: white;
+  /* font-size: 50px; */
+  z-index: 10;
+}
+.visi-misi h1{
+  scale: 200%;
+  color: white;
+  filter: blur(0.5px);
+  /* transform: translateX(-10px); */
+  opacity: 50%;
+}
+.kepala-sekolah h1{
+  scale: 200%;
+  color: white;
+  filter: blur(0.5px);
+  /* transform: translateX(-10px); */
+  opacity: 50%;
+}
+.tentang-sekolah h1{
+  scale: 200%;
+  color: white;
+  filter: blur(0.5px);
+  /* transform: translateX(-10px); */
+  opacity: 50%;
+}
+    /* Page 3 */
+
+    .page-3{
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      /* border: 1px solid red; */
+    }
+    .page-3 .row .card img{
+      /* border: 10px solid red; */
+     
+      /* margin: auto; */
+      width: 288px;
+
+    }
+  
+  @media(max-width: 970px){
     .hideOnMobile{
       display: none;
     }
@@ -217,9 +296,10 @@ display: inline-block;
       width: 50%;
       z-index: 10;
     }
-    
   }
-  @media(max-width: 1300px){
+
+
+  @media(max-width: 1400px){
     .hideOnMobile{
       display: none;
     }
@@ -233,17 +313,48 @@ display: inline-block;
     .sidebar{
       z-index: 10;
     }
+    /* .visi-misi{
+      width: 15rem;
+      height: 8rem;
+      background-color: #394867;
+    }
+    .kepala-sekolah{
+      width: 15rem;
+      height: 8rem;
+      background-color: #14274E;
+    }
+    .tentang-sekolah{
+      width: 15rem;
+      height: 8rem;
+      background-color: #9BA4B4;
+    } */
     
   }
-  @media(max-width: 400px){
+  @media(max-width: 300px){
     .sidebar{
       width: 100%;
       z-index: 10;
+  }
+    .visi-misi{
+      width: 1px;
+      height: 1px;
+      background-color: #394867;
     }
+    .kepala-sekolah{
+      width: 1px;
+      height: 1px;
+      background-color: #14274E;
+    }
+    .tentang-sekolah{
+      width: 1px;
+      height: 1px;
+      background-color: #9BA4B4;
+    } 
+  }
    
     /* nav li:first-child{
         margin-right: 54rem;
-      } */
+      }
   }
     
   @keyframes dropdown{
